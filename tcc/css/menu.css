@@ -1,0 +1,26 @@
+body{
+    background: url("img/fundo.png");
+}
+#caros{
+    height: 45%;  
+    width: 45%;  
+    position:relative;
+    top:5%;
+    left: 30%;
+    padding: 0px;
+    border: 10px solid black;
+    border-radius: 15px 20px;
+}
+
+.cartoes-da-edicao {
+    background-color: aqua;
+
+}
+.carcarousel-caption-d-none-d-md-block
+{
+
+
+background-color: aqua;
+
+
+}

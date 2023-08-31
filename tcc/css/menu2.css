@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(54, 19, 95);
+}
+h1 {
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    background-color: brown;
+    justify-content: center;
+}
+
+#pai {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.filho {
+    background-color: chartreuse;
+    padding: 25px;
+    margin: 25px;
+}
