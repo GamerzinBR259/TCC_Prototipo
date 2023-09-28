@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap%27%29%3B");
+
+body{
+    background-color: gray;
+}
+
+/* Estilo para o menu dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    background-color: #fff;
+    padding: 0;
+    border: 1px solid #ccc;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f4f4f4;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+a{
+    color: #fff;
+    transition: 0.3s;
+}
+
+a :hover{
+    opacity: 0.7;
+}
+
+/* Aumentar o tamanho do logo para 90px e tornar a barra de navegação proporcional */
+.nav {
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(11, 6, 37, 0.966), rgba(23, 12, 77, 0.966), rgb(4, 6, 133), rgb(7, 10, 177));
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto; /* Remova a altura fixa para torná-la proporcional */
+    padding: 10px; /* Adicione algum espaço interno para espaçamento */
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.logo img {
+    width: auto;
+    height: 50px; /* Aumente o tamanho do logo para 90px */
+    border-radius: 20px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+/* Resto do seu CSS ... */
+
+main{
+    background:url(fundo.jpg) no-repeat center center ;
+    background-size:cover ;
+    height: 92vh;
+}
+
+.cachorro{
+    display: flex;
+    border: 1px solid #ddd;
+    padding: 5px;
+    display: block; 
+    margin: 0 auto; 
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.alexandre{
+    display: flex;
+    justify-content: center;
+}
+
+.imagem-livro{
+    display: flex;
+    margin-top: 1%;
+    margin-left: 45.1%;
+}
+
+.genero-livro{
+    display: flex;
+    justify-content: center;
+}
+
+.sinopse-livro{
+    display: flex;
+    justify-content: center;
+}
+
+.neymar{
+    display: flex;
+    justify-content: center;
+}
+
+.lendo-online {
+    color: aqua;
+    background-color: rgb(185, 179, 179);
+    margin-left: 42.4%;
+    align-self: center;
+    padding: 25px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.lendo-online:hover{
+        background-color: red;
+}
+
+.baixando-livro {
+    color: aqua;
+    background-color: rgb(185, 179, 179);
+    margin: 3%;
+    align-self: center;
+    padding: 25px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.baixando-livro:hover{
+    background-color: lime;
+}
+
+.mobile-menu{
+    display:none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+ width: 32px;   
+ height: 2px;
+ background: #fff;
+ margin: 8px;
+}
+
+
+.search-box{
+    position: absolute;
+    top: 4%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: .5s;
+    font-family: 'Open Sans';
+}
+
+::-webkit-input-placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.search-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.search-box:hover > .search-txt {
+    width: 200px;
+    padding: 0 6px;
+}
+
+.search-box:hover > .search-btn {
+    background: white;
+}
+
+
+@media(max-width: 999px){
+
+body{
+    overflow: hidden;
+}
+
+.nav-list{
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(11, 6, 37, 0.966), rgba(23, 12, 77, 0.966), rgb(4, 6, 133), rgb(7, 10, 177));
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.03s ease-in;
+}
+
+.nav-list li{
+    margin-left: 0;
+    opacity: 0;
+}
+
+.search-box{
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-menu{
+    display: block;
+}
+
+
+}
+
+.nav-list.active{
+    transform: translateX(0);
+
+}
+
+
+
+@keyframes navLinkFade {
+    From{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
